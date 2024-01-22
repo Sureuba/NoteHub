@@ -1,0 +1,6 @@
+Running a Jar File (bash):
+java -jar yourfile.jar
+
+with arguements:
+java -jar yourfile.jar arg1 arg2
+
