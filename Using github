@@ -31,7 +31,8 @@ Pushing to Remote Repo
 git push origin master(or main) = push back to remote repo 
 
 
-
+Cloning from Github to Local Repo (SSH):
+git clone git@github.com:username/repository.git
 
 
 
