@@ -3,7 +3,7 @@ Connect your folder to the repo
 Pull from the current one to your branch
 Create your own branch so then you push it to your branch and then compare it to the main to ensure the changes can be made without any matching errors
 
-###Steps to SetUp
+### Steps to SetUp
 (1) Connect Local to Remote(GitHub):
 git init = project root command
 git remote add origin <Repo Location> = pushing local to the remote
