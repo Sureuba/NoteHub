@@ -1,7 +1,7 @@
 # **GitHub - Basics**
 Connect your folder to the repo <br/>
 Pull from the current one to your branch<br/>
-Create your own branch so then you push it to your branch and then compare it to the main to ensure the changes can be made without any matching errors
+Create your own branch so then you push it to your branch and then compare it to the main to ensure the changes can be made without any matching errors <br/>
 For more on [editing style](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 ### Steps to SetUp
