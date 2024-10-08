@@ -2,6 +2,7 @@
 Connect your folder to the repo
 Pull from the current one to your branch
 Create your own branch so then you push it to your branch and then compare it to the main to ensure the changes can be made without any matching errors
+For [editing style](https://ellen-park.medium.com/comprehensive-guide-to-styling-a-github-readme-2df7a6db1a00#:~:text=Text%20Styling%3A%20Bold,simply%20wrap%20in%20double%20asterisks.)
 
 ### Steps to SetUp
 (1) Connect Local to Remote(GitHub):
