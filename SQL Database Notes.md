@@ -114,5 +114,69 @@ FK - has options :
   1. SET NULL
   2. CASCADE
   3. SET DEFAULT
-  4. 
 
+##Lecture 15 Oct 22, 2024
+WHERE - write down all conditions Ex: WHERE cond1 AND cond2 ... as many conditions as needed
+ORDER BY - order something by column Ex: ORDER BY ___ 
+  ASC - ascending order sorting (by default it is ASC)
+  DSC - descending order sorting
+  
+###Null
+Null can have different meanings 
+  unknown value
+  Unavailable or withheld value - maybe we need a key to get the value
+  Not applicable -  don't insert value 
+
+AVOID THIS: NULL = NULL (typically false)
+Checking for NULL: IS NULL or IS NOT NULL
+EX: all employees who dont have supervisor 
+SELECT Fname, Lname
+FROM EMPLOYEE
+WHERE Super_SSN IS NULL
+  
+###Nested Queries
+withing WHERE we write another SELECCT, WHERE...etc
+EX: Using IN keyword (best for if we dont know the table and we don't know the attributes)
+UPDATE EMPLOYEE
+SET Salary = Salary * 1.1
+WHERE DNO IN (SELECT Dnumber
+FROM DEPARMENT
+WHERE Dname = ‘Research’);     Need department name "Research" 
+
+Ex: Using an equal sign if we have only 1 value returned 
+UPDATE EMPLOYEE
+SET Salary = Salary * 1.1
+WHERE DNO = (SELECT Dnumber
+FROM DEPARMENT
+WHERE Dname = ‘Research’);
+
+EX:
+SELECT DISTINCT Pnumber
+FROM PROJECT
+WHERE Pnumber IN
+(SELECT Pnumber
+FROM PROJECT, DEPARTMENT,
+EMPLOYEE
+WHERE Dnum = Dnumber
+AND Lname = ‘Smith’
+AND MGR_SSN = SSN)
+OR Pnumber IN
+(SELECT PNO
+FROM WORKS_ON, EMPLOYEE
+WHERE ESSN = SSN
+AND Lname = ‘Smith’ );
+
+ANY - if any matches keyword it is true
+ALL - All values have to match return value with all values 
+UNIQUE - true is all values returning are unique (returns BOOL)z
+EXIST - Used for correlated and nested part if it is empty or not 
+
+###Joins
+
+1. JOIN
+2. NATURAL JOIN
+3. INNER JOIN
+4. OUTER JOIN - LEFT, RIGHT, FULL
+
+INNER JOIN  and JOIN are the same 
+                                                                                                                                                                                                                  
