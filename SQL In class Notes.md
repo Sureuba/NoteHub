@@ -1,4 +1,4 @@
-# **SQL Notes**
+# **SQL Notes In Class**
 Used mainly for relational databases. Data definition (DDL), manipulation (DML). <br/>
 DDL data definition language - schema definitions and changes, DML data manipulation language - changing and querying data. 
 
@@ -14,19 +14,19 @@ To **end statement** use ;  semicolon
 **SQL is case insentive** select = SELECT
 **DB is case sensitive** meaning attribute names are case sensitive
 
-##DDL 
+## DDL 
 schema -  outline of database (relational schema has all info on DB), Authorization identifier, descriptions for elements
 elements - Tables, constraints, views, domains, and other constructs
 
-###Authorizations
+### Authorizations
 **CREATE SCHEMA statement**
 **CREATE SCHEMA COMPANY AUTHORIZATION ‘Jsmith'**
 
-###Creating Database
+### Creating Database
 **CREATE Database <nameOfDatabase>**
 creates the database first
 
-###Creating a Table
+### Creating a Table
 
 **CREATE TABLE COMPANY.EMPLOYEE** 
 COMPANY - database name 
@@ -50,10 +50,10 @@ Views are created to see how database is handled.
   -
 **PRIMARY KEY (Fname) );** <br />
 
-###How to change a table:
+### How to change a table:
 **ALTER TABLE EMPLOYEE**
 
-###Creating a table with foreign key <br />
+### Creating a table with foreign key <br />
 **(Fname      VARCHAR(15)      NOT NULL**  
   
   -
@@ -65,14 +65,14 @@ Views are created to see how database is handled.
 Foreign keys: may have circular reference
 Unique means it is also unique but not a Primary Key
 
-###TABLE notes:
+### TABLE notes:
 
 you can skip constants
 can skip primary key specification
 
 **Constants**: If we write NOT NULL means value cannot be missing, if NOT written then it can be NULL
 
-###**Datatypes**:
+### **Datatypes**:
 Integer (int)
 Smallint
 Float 
@@ -94,19 +94,19 @@ TIMESTAMP - todays date and what time now
 TIMESTAMP with timezone 
 INTERVAL
 
-###Domains
+### Domains
 CREATE DOMAIN SSN_TYPE as CHAR(9)
 
 Used in:
 CREATE TABLE EMP (SSN     SSN_TYPE     NOT NULL, ...);
 
-###Other constrains on Attributed Domains
+### Other constrains on Attributed Domains
 DEFAULT <value>
 
 Can also CHECK:
 Dnumber    INT     NOT NULL CHECK (Dnumber > 0 AND Dnumber < 21
 
-###Key Constraints
+### Key Constraints
 
 PK- chooses a PK
 Unique - Candidate key
@@ -115,13 +115,13 @@ FK - has options :
   2. CASCADE
   3. SET DEFAULT
 
-##Lecture 15 Oct 22, 2024
+## Lecture 15 Oct 22, 2024
 WHERE - write down all conditions Ex: WHERE cond1 AND cond2 ... as many conditions as needed
 ORDER BY - order something by column Ex: ORDER BY ___ 
   ASC - ascending order sorting (by default it is ASC)
   DSC - descending order sorting
   
-###Null
+### Null
 Null can have different meanings 
   unknown value
   Unavailable or withheld value - maybe we need a key to get the value
@@ -134,7 +134,7 @@ SELECT Fname, Lname
 FROM EMPLOYEE
 WHERE Super_SSN IS NULL
   
-###Nested Queries
+### Nested Queries
 withing WHERE we write another SELECCT, WHERE...etc
 EX: Using IN keyword (best for if we dont know the table and we don't know the attributes)
 UPDATE EMPLOYEE
@@ -171,7 +171,7 @@ ALL - All values have to match return value with all values
 UNIQUE - true is all values returning are unique (returns BOOL)z
 EXIST - Used for correlated and nested part if it is empty or not 
 
-###Joins
+### Joins
 
 1. JOIN
 2. NATURAL JOIN
