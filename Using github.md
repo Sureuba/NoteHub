@@ -14,6 +14,12 @@ git branch = lists out all the existing branches in a repo<br/>
 git branch new-branch-name = create a new branch mirroring the commits on the active branch<br/>
 git checkout new-branch-name = switches to the new branch - new branch will become the active one<br/>
 
+### How to clone to local repo
+git clone <link>
+
+### making a new branch and working on it
+
+
 ### Steps to make changes to code (FOLLOW EVERY TIME):
 Updating your Branch with the master: <br/>
 git status = see changes made to local branch <br/>
