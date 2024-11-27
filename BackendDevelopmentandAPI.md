@@ -12,6 +12,7 @@ npm (Node Package Manager), is a command line tool to install, create, and share
 
 **package.json - What does it do** 
 * Stores info on the project, has a single JSON object. 
+* Powerful dependency management
 * Information is stored in Key-Value pairs.
 * Stores metadata.
 * 2 required fields: name, version
@@ -23,7 +24,17 @@ Command: npm init -y (-y will generate the file without questions)
 **Adding fields in the Package.json file**<Br/>
 author field: specifies who created the project, string or object with contact detail, etc.
 
-Ex: "author" : "Jane Doe"
-"description": "What this project does"
+    "author" : "Jane Doe"
+    "description": "What this project does"
+    "keywords": ["Boilerplate", "backend", "freecodecamp"],
+	"license": "MIT",
+	"version": "1.2.0",
 
-Keywords: describe project with related keywords
+**Adding dependencies**
+
+"dependencies": {
+  "package-name": "version",
+  "express": "4.14.0"
+}
+
+
