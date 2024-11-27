@@ -32,9 +32,9 @@ author field: specifies who created the project, string or object with contact d
 
 **Adding dependencies**
 
-"dependencies": {
-  "package-name": "version",
-  "express": "4.14.0"
-}
+    "dependencies": {
+    "package-name": "version",
+    "express": "4.14.0"
+    }
 
 
