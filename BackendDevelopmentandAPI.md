@@ -18,8 +18,9 @@ npm (Node Package Manager), is a command line tool to install, create, and share
 * 2 required fields: name, version
 
 **Creating a package.json** 
+    
     Command: npm init -y 
-    (-y will generate the file without questions)
+(-y will generate the file without questions)
 
 **Adding fields in the Package.json file**<Br/>
 author field: specifies who created the project, string or object with contact detail, etc.
