@@ -47,7 +47,8 @@ Knowing SemVer can be useful when you develop software that uses external depend
 * PATCH version should increment when you make backwards-compatible bug fixes
 
 * Patches - bug fixes
-* MINORs add new features but neither of them break what worked before. * MAJORs add changes that won’t work with earlier versions.
+* MINORs add new features but neither of them break what worked before.
+* MAJORs add changes that won’t work with earlier versions.
 
 ~ : Allow an npm dependency to **update to the latest PATCH version**
 
