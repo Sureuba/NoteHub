@@ -10,4 +10,5 @@ Starting/restarting the server:
 
     "start": "node server.js"
     (this script would be run from the terminal using npm run start)
+
 * 
