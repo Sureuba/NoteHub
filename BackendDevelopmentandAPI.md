@@ -1,5 +1,7 @@
 # Back End Development and APIs NOTES
 ### FreeCodeCamp.com
 
-testing 1 2 3
+Learning: Javascript for backend, 
+Node.js (framework) and npm (package manager)
 
+testing
