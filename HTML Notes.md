@@ -17,7 +17,8 @@ The use element tells the browser to instantiate or "use" the previously defined
 <svg version="1.0"
   xmlns="http://www.w3.org/2000/svg">
   <symbol id="logo" viewBox="0 0 60 60">
-    <!-- Your graphic elements like <path> and <rect> -->  </symbol>
-  <use href="#logo" />   THIS LINE USES THE SVG
+    <!-- Your graphic elements like <path> and <rect> -->
+  </symbol>
+  <use href="#logo" />   THIS LINE USES THE SVG/ RENDERS IT TO SEE IT
 </svg>
 ```
