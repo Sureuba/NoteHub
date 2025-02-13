@@ -9,9 +9,9 @@
 
 SVG's an in depth look at them:
 
-The <symbol> element is used to declare a graphic (or part of one) that can be reused later. However, by itself, a <symbol> does not render anything on the screen—it’s just a definition or a “template.”
+The symbol element is used to declare a graphic (or part of one) that can be reused later. However, by itself, a symbol does not render anything on the screen—it’s just a definition or a “template.”
 
-The <use> element tells the browser to instantiate or "use" the previously defined symbol with the id "logo". This is what actually renders the graphic on the page. Without the <use> element, the symbol would remain just a definition and nothing would be displayed.
+The use element tells the browser to instantiate or "use" the previously defined symbol with the id "logo". This is what actually renders the graphic on the page. Without the use element, the symbol would remain just a definition and nothing would be displayed.
  ```html
 <?xml version="1.0" encoding="UTF-8"?>
 <svg version="1.0"
