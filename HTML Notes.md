@@ -1,14 +1,14 @@
 # Useful snippets of HTML
 
- tells the browser to always fetch the latest version of the page from the server rather than using a stored copy. 
- This can be especially useful for dynamic pages or content that frequently changes.
  
  ```html
+ tells the browser to always fetch the latest version of the page from the server rather than using a stored copy. 
+ This can be especially useful for dynamic pages or content that frequently changes.
+
 <meta http-equiv="cache-control" content="no-cache">
 
-SVG's
+SVG's an in depth look at them:
 
-```html
 <?xml version="1.0" encoding="UTF-8"?>
 <svg version="1.0"
   xmlns="http://www.w3.org/2000/svg">
@@ -19,5 +19,5 @@ SVG's
     <path transform="matrix(.55 0 0 .55 60.21 .43999)" d="m-41.747 56.761a12.596 12.596 0 1 0-25.193 0 12.596 12.596 0 1 0 25.193 0h-12.597z" fill="#b3b3b3" fill-rule="evenodd" stroke="#333" stroke-width="1.6827"/>
     <rect transform="translate(0 -.17995)" x="23.213" y="5.2965" width="14.396" height="21.593" rx="1" fill="#4c4c4c" fill-rule="evenodd" stroke="#333" stroke-width="1.875"/>
   </symbol>
-  <use href="#logo" />
+  **<use href="#logo" />**   THIS LINE USES SVG
 </svg>
