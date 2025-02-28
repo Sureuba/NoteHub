@@ -26,8 +26,11 @@ sudo apt-get up (same as above)
 
 cat your_file.py (to see contents of file on terminal)
 
-checking wireless interface name: ip a
-return SSID of network pi is connected to: iwgetid -r
+checking wireless interface name: 
+ip a
+
+return SSID of network pi is connected to: 
+iwgetid -r
 -----------------------------------------------------------------------------------------------
 
 How to change WIFI settings within the PI
