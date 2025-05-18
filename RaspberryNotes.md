@@ -13,27 +13,31 @@ network={
 }
 (Have multiple network blocks to connect to multiple networks, the PI will connect to whichever one works in the moment)
 ------------------------------------------------------
-REMOTE access into raspberry from PC
+# REMOTE access into raspberry from PC
 
 1. open terminal on PC
 2. command: ssh username@hostname.local 
 3. say yes and enter password
 4. Now you are in the RP 
 -----------------------------------------------------------------------------------------------
-Common PI commands:
-sudo apt-get update (updates all of the applications on the pi)
-sudo apt-get up (same as above)
-
+# Common PI commands:
+**sudo apt-get update (updates all of the applications on the pi)**
+**sudo apt-get up (same as above)**
 cat your_file.py (to see contents of file on terminal)
 
 checking wireless interface name: 
 ip a
 
+## Using a virtual environment
+activate: **source venv/bin/activate**
+installing the dht library: pip install adafruit-circuitpython-dht
+Deactivating: **deactivate**
+
 return SSID of network pi is connected to: 
 iwgetid -r
 -----------------------------------------------------------------------------------------------
 
-How to change WIFI settings within the PI
+# How to change WIFI settings within the PI
 
 1. sudo nano /etc/wpa_supplicant/wpa_supplicant.conf   (goes into wpa_supplicant file which connects to network!)
 
@@ -46,7 +50,7 @@ How to change WIFI settings within the PI
 
 -----------------------------------------------------------------------------------------------
 
-Connecting VSCODE to the PI
+# Connecting VSCODE to the PI
 
 Use remote connection
 1. add an ssh file in C:\Users\<YourUsername>\.ssh\config on Windows
@@ -55,7 +59,7 @@ Use remote connection
 4. log in with PI password
 
 -----------------------------------------------------------------------------------------------
-Start VcXsrv for PC server to run the GUI remotely!
+# Start VcXsrv for PC server to run the GUI remotely!
 
 After installation, open VcXsrv. You can do this by searching for “VcXsrv” in the Windows Start menu.
 In the configuration window, select "Multiple windows".
@@ -64,7 +68,7 @@ Click Next through the default options, then click Finish.
 VcXsrv will start and run in the background (you may see its icon in the system tray).
 -----------------------------------------------------------------------------------------------
 
-Using PuTTY (session should be saved)
+# Using PuTTY (session should be saved)
 Session: 
 enter hostname
 port: 22
