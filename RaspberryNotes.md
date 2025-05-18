@@ -29,8 +29,11 @@ checking wireless interface name:
 ip a
 
 ## Using a virtual environment
+
 activate: **source venv/bin/activate**
+
 installing the dht library: pip install adafruit-circuitpython-dht
+
 Deactivating: **deactivate**
 
 return SSID of network pi is connected to: 
