@@ -2,6 +2,7 @@ Add files to boot, to enable ssh and wifi connection
 add ssh file (no extension)
 
 add wpa_supplicant.conf file (below)
+
 ------------------------------------------------------
 country=CA
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
@@ -12,6 +13,7 @@ network={
     password="meemeemaw"   #Wifi password
 }
 (Have multiple network blocks to connect to multiple networks, the PI will connect to whichever one works in the moment)
+
 ------------------------------------------------------
 # REMOTE access into raspberry from PC
 
@@ -36,8 +38,10 @@ installing the dht library: pip install adafruit-circuitpython-dht
 
 Deactivating: **deactivate**
 
+
 return SSID of network pi is connected to: 
 iwgetid -r
+
 -----------------------------------------------------------------------------------------------
 
 # How to change WIFI settings within the PI
