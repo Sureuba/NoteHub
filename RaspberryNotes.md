@@ -90,4 +90,5 @@ port: 22
 
 connection> ssh> X11   enable X11 forwarding:
 x display location: enter localhost:0.0
+
 -----------------------------------------------------------------------------------------------
