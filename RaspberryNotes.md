@@ -69,15 +69,23 @@ Use remote connection
 # Start VcXsrv for PC server to run the GUI remotely!
 
 After installation, open VcXsrv. You can do this by searching for “VcXsrv” in the Windows Start menu.
+
 In the configuration window, select "Multiple windows".
+
 Ensure "Start no client" is selected.
+
 Click Next through the default options, then click Finish.
+
 VcXsrv will start and run in the background (you may see its icon in the system tray).
+
 -----------------------------------------------------------------------------------------------
 
 # Using PuTTY (session should be saved)
+
 Session: 
+
 enter hostname
+
 port: 22
 
 connection> ssh> X11   enable X11 forwarding:
