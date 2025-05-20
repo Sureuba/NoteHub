@@ -9,12 +9,10 @@ ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 
 network={
-
     ssid="Network_name"
-    
     password="whateverthepasswordis"   #Wifi password
-    
 }
+
 (Have multiple network blocks to connect to multiple networks, the PI will connect to whichever one works in the moment)
 
 ------------------------------------------------------
