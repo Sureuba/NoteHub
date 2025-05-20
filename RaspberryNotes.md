@@ -25,7 +25,10 @@ network={
 # Common PI commands:
 **sudo apt-get update (updates all of the applications on the pi)**
 **sudo apt-get up (same as above)**
+
 cat your_file.py (to see contents of file on terminal)
+
+rm myscript.py  (DELETE file)
 
 checking wireless interface name: 
 ip a
