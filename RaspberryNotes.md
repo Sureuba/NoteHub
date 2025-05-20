@@ -8,6 +8,7 @@ country=CA
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 
+
 network={
     ssid="Network_name"
     password="whateverthepasswordis"   #Wifi password
@@ -110,3 +111,19 @@ sudo systemctl start pigpiod
 Then inside VENV install pigpio package for pwm version of using sensor 
 
 pip install pigpio
+
+-----------------------------------------------------------------------------------------------
+# VOC sensor
+
+Connecting through USB-C 
+
+Board comes up as: ttyACM0
+
+Verify device node: ls -l /dev/ttyACM0
+
+Then you can launch minicom from your normal shell (even while your venv is active) with:
+    minicom -D /dev/ttyACM0 -b 9600
+you can see your boards command menu with this**
+
+To exit: Ctrl-A then X, confirm.
+
