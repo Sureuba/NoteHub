@@ -99,7 +99,7 @@ sudo apt update
 
 sudo apt install -y pigpio python3-pigpio
 
-sudo systemctl enable pigpiod
+sudo systemctl enable pigpiod    **Make sure pigpiod daemon starts now and at each boot**
 
 sudo systemctl start pigpiod
 
