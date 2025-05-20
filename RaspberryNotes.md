@@ -92,3 +92,17 @@ connection> ssh> X11   enable X11 forwarding:
 x display location: enter localhost:0.0
 
 -----------------------------------------------------------------------------------------------
+# CO2 Sensor 
+On pi in terminal (outside venv)
+
+sudo apt update
+
+sudo apt install -y pigpio python3-pigpio
+
+sudo systemctl enable pigpiod
+
+sudo systemctl start pigpiod
+
+Then inside VENV install pigpio package for pwm version of using sensor 
+
+pip install pigpio
