@@ -7,8 +7,8 @@ Use Tmodloader -> Workshop -> Develop Mods -> Create Mod -> Open Sources -> show
 
 [First Mod Github](https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Modding-Guide)
 
-### Important files:\
+### Important files:
 Note: Everything is object oriented AHHHHH!\
-MyMod.cs mod main file\
+MyMod.cs mod main file
 
 
